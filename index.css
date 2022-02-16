@@ -1,0 +1,624 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: proxima-nova, sans-serif;
+}
+
+/* Header */
+div#introPage header {
+  padding: 1em 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 0.13em white;
+  align-items: center;
+}
+
+/* Navigation */
+div#introPage header ul {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 0 1.5em 0 40vw;
+  /* margin: 0.5em 0 1em 0; */
+  list-style-type: none;
+  padding-top: 1em;
+  align-items: center;
+}
+
+div#introPage header ul li {
+  padding: 0.5em 0 0.3em 0;
+}
+
+div#introPage header ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 0;
+}
+
+div#introPage header ul a#contactButton {
+  background-color: #583183;
+  padding: 0.8em;
+  border-radius: 0.2em;
+}
+
+/* Logo */
+div#introPage header img {
+  height: 3.5em;
+  padding-left: 1.5em;
+}
+
+#introPage {
+  background: rgb(219, 142, 102);
+  background: linear-gradient(
+    180deg,
+    rgba(219, 142, 102, 1) 0%,
+    rgba(201, 116, 104, 1) 19%,
+    rgba(138, 47, 124, 1) 100%
+  );
+  height: 100vh;
+  padding: 0 8em;
+  position: relative;
+}
+
+/* Welcome Screen */
+div#introPage section {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Right side */
+div#minimalDesign {
+  position: relative;
+}
+
+div#minimalDesign img {
+  position: relative;
+  width: 30vw;
+  top: 15vh;
+  right: 5vw;
+}
+
+/* Left side */
+section div#contentHelloWorld {
+  padding-left: 1.5em;
+  color: white;
+  width: 50%;
+}
+
+section div#contentHelloWorld h1 {
+  font-size: 4em;
+  margin: 20vh 0 0 0;
+}
+
+section div#contentHelloWorld p {
+  font-size: 1.3em;
+  line-height: 1em;
+  margin: 0;
+  padding-right: 5em;
+}
+
+section div#contentHelloWorld ul {
+  display: flex;
+  justify-content: flex-start;
+  margin: 2.5em 0;
+  padding: 0;
+  list-style-type: none;
+  align-items: center;
+}
+
+section div#contentHelloWorld ul li {
+  padding-left: 1em;
+}
+
+section div#contentHelloWorld ul li:first-of-type {
+  padding: 0 1em 0 0;
+}
+
+section div#contentHelloWorld ul li a img {
+  height: 4.5vh;
+}
+
+a.connectButton {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 0;
+  background-color: #583183;
+  padding: 1em 1.3em;
+  border-radius: 0.2em;
+}
+
+/* Cloud seperator */
+div.seperator {
+  position: absolute;
+  bottom: -13vh;
+  width: 100%;
+  left: 0em;
+  z-index: 2;
+}
+
+/* Last cloud seperator */
+div.seperator:last-of-type {
+  position: absolute;
+  bottom: -10vh;
+  width: 100%;
+  left: 0em;
+  z-index: 2;
+}
+
+/* Bear looking from clouds */
+div#bear {
+  position: absolute;
+  bottom: -13vh;
+  width: 12vw;
+  left: 7vw;
+  z-index: 0;
+}
+
+/* Projects */
+/* ------------------------------------------------------------------------------------------ */
+section#projects {
+  background: rgb(219, 142, 102);
+  background: linear-gradient(
+    0deg,
+    rgba(219, 142, 102, 1) 0%,
+    rgba(201, 116, 104, 1) 19%,
+    rgba(138, 47, 124, 1) 100%
+  );
+  height: 100vh;
+  padding: 0 9.5em;
+  position: relative;
+}
+
+/* Titles */
+section h2 {
+  font-size: 4em;
+  padding: 20vh 0 0 0;
+  margin: 0;
+  color: white;
+}
+
+/* Paragraphs */
+section p {
+  color: white;
+  font-size: 1.1em;
+  font-weight: normal;
+  padding-right: 65%;
+}
+
+/* Project list */
+section#projects ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 2em 0;
+}
+
+section#projects ul li h3 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.4em;
+  margin: 1em 0;
+}
+
+section#projects ul li a {
+  text-decoration: none;
+}
+
+section#projects ul li img {
+  width: 20vw;
+}
+
+/* Graphic Design */
+/* ---------------------------------------------------------------------------------------- */
+section#graphics {
+  background: rgb(219, 142, 102);
+  background: linear-gradient(
+    180deg,
+    rgba(219, 142, 102, 1) 0%,
+    rgba(201, 116, 104, 1) 19%,
+    rgba(138, 47, 124, 1) 100%
+  );
+  height: 100vh;
+  padding: 0 9.5em;
+  position: relative;
+}
+
+/* Graphic designs right side */
+div#graphicImages {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+div#graphicImages img {
+  height: 100vh;
+}
+
+/* Buttons */
+section#graphics ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+section#graphics ul li {
+  justify-content: flex-start;
+  width: 7.5em;
+}
+
+a.connectButtonGraphic {
+  background-color: #583183;
+  padding: 0.5em 2em;
+  border-radius: 0.2em;
+}
+
+section#graphics ul li:nth-of-type(2) {
+  padding-left: 8em;
+}
+
+section#graphics ul li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+section#graphics ul li a img {
+  object-fit: contain;
+  height: 1.7em;
+}
+
+/* Skills */
+/* ---------------------------------------------------------------------------------------- */
+section#skills {
+  background: rgb(219, 142, 102);
+  background: linear-gradient(
+    0deg,
+    rgba(219, 142, 102, 1) 0%,
+    rgba(201, 116, 104, 1) 19%,
+    rgba(138, 47, 124, 1) 100%
+  );
+  height: 100vh;
+  padding: 0 9.5em;
+  position: relative;
+}
+
+section#skills ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+/* Background icons */
+section#skills ul li {
+  justify-content: flex-start;
+  width: 3.5em;
+  padding: 0.5em 0.6em;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+section#skills ul li:last-child {
+  border-radius: 0em 0.4em 0.4em 0em;
+}
+
+section#skills ul li:first-child {
+  border-radius: 0.4em 0em 0em 0.4em;
+}
+
+section#skills a {
+  display: block;
+  width: 8em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+section#skills a img {
+  object-fit: contain;
+  height: 1.4em;
+}
+
+div#flyingBear {
+  position: absolute;
+  right: 15vw;
+  width: 20em;
+  bottom: -5vh;
+}
+
+/* Contact footer */
+section#contactFooter {
+  background-color: white;
+  height: 20vh;
+  padding: 0 38vw;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1em;
+}
+
+section#contactFooter div {
+  display: flex;
+  justify-content: center;
+}
+
+section#contactFooter a {
+  display: block;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 0;
+  background-color: #583183;
+  padding: 1em 0;
+  border-radius: 0.2em;
+  margin-top: 3em;
+}
+
+/* Sprinkles */
+section#contactFooter img:nth-of-type(1) {
+  display: block;
+  position: absolute;
+  width: 90vw;
+  bottom: 3vw;
+  z-index: -1;
+}
+
+/* Hoops */
+section#contactFooter img:nth-of-type(2) {
+  display: block;
+  position: absolute;
+  width: 18vw;
+  bottom: 0.3vw;
+  z-index: -1;
+}
+
+/* Floating animation connect button */
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* Animation changing the scale of the hoops */
+.size {
+  animation-name: sizechange;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes sizechange {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hover animations */
+/* ---------------------------------------------------------------------------------------- */
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* Underline Reveal */
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  height: 3px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-reveal:hover:before,
+.hvr-underline-reveal:focus:before,
+.hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* Projects CSS */
+/* ----------------------------------------------------------------------------------------- */
+
+/* Header */
+div.projectTopblock header {
+  padding: 1em 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 0.13em white;
+  align-items: center;
+}
+
+/* Navigation */
+div.projectTopblock header ul {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 0 1.5em 0 40vw;
+  /* margin: 0.5em 0 1em 0; */
+  list-style-type: none;
+  padding-top: 1em;
+  align-items: center;
+}
+
+div.projectTopblock header ul li {
+  padding: 0.5em 0 0.3em 0;
+}
+
+div.projectTopblock header ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 0;
+}
+
+div.projectTopblock header ul a#contactButton {
+  background-color: #583183;
+  padding: 0.8em;
+  border-radius: 0.2em;
+}
+
+/* Logo */
+div.projectTopblock header img {
+  height: 3.5em;
+  padding-left: 1.5em;
+}
+
+.projectTopblock {
+  background: rgb(219, 142, 102);
+  background: linear-gradient(
+    180deg,
+    rgba(219, 142, 102, 1) 0%,
+    rgba(201, 116, 104, 1) 19%,
+    rgba(138, 47, 124, 1) 100%
+  );
+  height: 100vh;
+  padding: 0 8em;
+  position: relative;
+}
+
+/* Content project page */
+div.projectTopblock section {
+  display: flex;
+}
+
+section article h2.projects {
+  font-size: 4em;
+  padding: 15vh 0 0 0;
+  margin: 0;
+  color: white;
+}
+
+section div.video {
+  position: relative;
+  margin: 20vh 6.7vw;
+}
+
+section div.video iframe {
+  position: relative;
+  width: 32.9vw;
+  height: 38vh;
+  border-radius: 0.3em;
+  z-index: 1;
+}
+
+p.projectText:first-of-type {
+  margin: 0;
+  padding: 0 8em 0 0;
+}
+
+p.projectText {
+  margin: 1em 8em 1em 0;
+  padding: 0;
+}
+
+section article a {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+section article a:nth-of-type(2) {
+  margin-left: 2em;
+  padding: 0.5em 3.5em;
+}
+
+/* Image instead of iframe */
+section div.video img.iframe {
+  position: relative;
+  width: 32.9vw;
+  height: 38vh;
+  border-radius: 0.3em;
+  z-index: 1;
+}
+
+/* Clouds with video */
+section div.video img.cloudLeft {
+  position: absolute;
+  bottom: -10vh;
+  width: 15vw;
+  left: -5vw;
+  z-index: 0;
+}
+
+section div.video img.cloudRight {
+  position: absolute;
+  top: -10vh;
+  width: 20vw;
+  right: -5vw;
+  z-index: 0;
+}
+
+/* Scrolling through page with links */
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
