@@ -622,3 +622,59 @@ html {
     scroll-behavior: auto;
   }
 }
+
+/* Under construction page (smallScreen.html */
+/* ----------------------------------------------------------------------------------------- */
+body#construction {
+  background: rgb(219, 142, 102);
+  background: linear-gradient(
+    180deg,
+    rgba(219, 142, 102, 1) 0%,
+    rgba(201, 116, 104, 1) 19%,
+    rgba(138, 47, 124, 1) 100%
+  );
+  height: 100vh;
+  padding: 0;
+  position: relative;
+}
+
+body#construction article {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+
+body#construction h1 {
+  font-size: 3em;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+body#construction h2 {
+  font-size: 2.5em;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+/* Mobile size */
+@media only screen and (max-width: 600px) {
+  body#construction {
+    padding: 1em;
+  }
+  body#construction h1 {
+    font-size: 2em;
+  }
+
+  body#construction h2 {
+    font-size: 1.5em;
+  }
+}
